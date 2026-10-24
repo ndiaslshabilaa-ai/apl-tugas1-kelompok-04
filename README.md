@@ -4,19 +4,19 @@ Konteks & Keputusan Arsitektur (Pertemuan 5) serta Karakteristik Arsitektur & At
 
 | Keterangan | Isi |
 |---|---|
-| Kelompok | Bagian [I / II / III] – Kelompok [XX] |
-| Subsistem | [salin dari tabel 2.2 pada dokumen tugas] |
-| Layanan inti | [salin dari tabel 2.2 pada dokumen tugas] |
+| Kelompok | Bagian I – Kelompok 04 |
+| Subsistem | Assignment & Assessment |
+| Layanan inti | Layanan tugas akhir: pengajuan judul, penetapan pembimbing, bimbingan, seminar atau sidang, dan penilaian |
 | Perwakilan kelompok | [nama, stambuk] |
 
 ## Anggota
 
 | No | Stambuk | Nama | Akun GitHub | Kode yang dikerjakan |
 |---|---|---|---|---|
-| 1 | | | @ | |
-| 2 | | | @ | |
-| 3 | | | @ | |
-| 4 | | | @ | |
+| 1 |13020240260| B.Nadia Salsabila| @ndiaslshabilaa-ai |A1,A2,A3 |
+| 2 |13020240049| Artika Milad Arhidayah| @ | |
+| 3 |13020240332| Annisa Rezky Ashriani| @ | |
+| 4 |13020240279| Andi Naqia Aura WR| @ | |
 
 ## Peta berkas dan penanggung jawab
 
@@ -24,10 +24,10 @@ Status: Belum / Draf / Selesai. Perbarui tabel ini setiap ada perubahan.
 
 | Kode | Berkas | Penanggung jawab | Status |
 |---|---|---|---|
-| BAB I | laporan/BAB1-pendahuluan.md | | Belum |
-| A1 | laporan/A1-konteks-arsitektur.md | | Belum |
-| A2 | laporan/A2-stakeholder.md | | Belum |
-| A3 | laporan/A3-batasan.md | | Belum |
+| BAB I | laporan/BAB1-pendahuluan.md |Semua Anggota | Belum |
+| A1 | laporan/A1-konteks-arsitektur.md |B.Nadia Salsabila| Belum |
+| A2 | laporan/A2-stakeholder.md |B.Nadia Salsabila | Belum |
+| A3 | laporan/A3-batasan.md |B.Nadia Salsabila | Belum |
 | A4 | laporan/A4-asr.md | | Belum |
 | A5 | laporan/A5-keputusan-arsitektur.md dan adr/ | | Belum |
 | B1 | laporan/B1-karakteristik.md | | Belum |
