@@ -40,7 +40,7 @@ Status: Belum / Draf / Selesai. Perbarui tabel ini setiap ada perubahan.
 
 ## Laporan PDF terakhir
 
-`hasil/TugasKel1_[Bagian]_Kelompok[XX].pdf` (contoh: `TugasKel1_I_Kelompok01.pdf`)
+`hasil/TugasKel5_I_Kelompok04.pdf` (contoh: `TugasKel1_I_Kelompok01.pdf`)
 
 ## Aturan kerja singkat
 
