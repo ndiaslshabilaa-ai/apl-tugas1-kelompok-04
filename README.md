@@ -7,7 +7,7 @@ Konteks & Keputusan Arsitektur (Pertemuan 5) serta Karakteristik Arsitektur & At
 | Kelompok | Bagian I – Kelompok 04 |
 | Subsistem | Assignment & Assessment |
 | Layanan inti | Layanan tugas akhir: pengajuan judul, penetapan pembimbing, bimbingan, seminar atau sidang, dan penilaian |
-| Perwakilan kelompok | [nama, stambuk] |
+| Perwakilan kelompok | Artika Milad Arhidayah, 13020240049 |
 
 ## Anggota
 
