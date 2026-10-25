@@ -15,7 +15,7 @@ Konteks & Keputusan Arsitektur (Pertemuan 5) serta Karakteristik Arsitektur & At
 |---|---|---|---|---|
 | 1 |13020240260| B.Nadia Salsabila| @ndiaslshabilaa |A2,A3,B1 |
 | 2 |13020240049| Artika Milad Arhidayah| @artikaarhidayah10 |BAB 1, A5, B4 |
-| 3 |13020240332| Annisa Rezky Ashriani| @annisarezky | A1, B5, BAB IV |
+| 3 |13020240332| Annisa Rezky Ashriani| @annisarezky |A1, B5, BAB IV |
 | 4 |13020240279| Andi Naqia Aura WR| @auranaqia | |
 
 ## Peta berkas dan penanggung jawab
