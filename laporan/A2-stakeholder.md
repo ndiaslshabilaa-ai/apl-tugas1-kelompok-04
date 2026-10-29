@@ -2,8 +2,6 @@
 
 <!-- Penanggung jawab: [Artika Milad Arhidayah] -->
 
-# A2. Stakeholder dan Peta Power/Interest
-
 Berikut adalah daftar *stakeholder* (pemangku kepentingan) untuk Layanan Tugas Akhir pada subsistem *Assignment & Assessment*, beserta analisis kebutuhan, ekspektasi kualitas, dan prioritasnya.
 
 ## 1. Stakeholder Register
