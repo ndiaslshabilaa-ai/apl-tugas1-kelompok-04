@@ -13,6 +13,8 @@ Struktur modul menunjukkan bagaimana kode sumber perangkat lunak dibagi ke dalam
 
 > **Keterangan Diagram:** Kode dibagi ke dalam tiga lapisan terisolasi agar perubahan aturan bisnis atau validasi syarat SKS hanya menyentuh lapisan logika tanpa menaikkan atau melompati lapisan di atasnya. Lapisan tampilan hanya memanggil modul pengelola tugas akhir dan tidak mengakses data secara langsung.
 
+ ![Diagram modul](../diagram/B3-Strukturmodul.drawio.png)
+
 ---
 
 ## 2. Struktur Komponen dan Konektor (Component & Connector / C&C Structure)
@@ -24,6 +26,8 @@ Struktur C&C menunjukkan elemen-elemen *runtime* (proses, layanan, dan penyimpan
 * Komponen berinteraksi dengan **Cloud Object Storage** (untuk penyimpanan dokumen draf skripsi) dan **Basis Data Akademik Pusat** (untuk transaksi data utama).
 
 > **Keterangan Diagram:** Permintaan unggah dokumen berukuran besar dan proses penjadwalan sidang dimasukkan ke dalam antrean pesan (*message queue*) agar sistem tahan terhadap lonjakan beban akses serentak tanpa mengalami *request timeout*.
+
+ ![Diagram modul](../diagram/B3-StrukturC&C.drawio.png)
 
 ---
 
@@ -37,3 +41,5 @@ Struktur alokasi menjawab dua hal utama: di mana perangkat lunak dijalankan pada
   * **Tim C:** Bertanggung jawab pada modul penyimpanan dan data (*Repositori Dokumen Skripsi*, *Repositori Nilai Akademik*).
   * **Tim D:** Bertanggung jawab pada infrastruktur cloud, manajemen *message queue*, serta pengujian beban sistem (*load testing*).
 > **Keterangan Diagram:** Aplikasi inti dijalankan pada server aplikasi di cloud kampus, sementara data master tetap berada di server data pusat universitas. Pembagian modul ke dalam empat tim terstruktur memungkinkan proses pengembangan kode dapat berjalan secara paralel.
+
+ ![Diagram modul](../diagram/B3-Struktur-alokasi.drawio.png)
