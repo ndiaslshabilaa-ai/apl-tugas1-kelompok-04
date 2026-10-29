@@ -1,0 +1,294 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="6Kza-ZSU3ok-FVDp-jtn">
+    <mxGraphModel dx="1546" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\nskinparam DefaultTextAlignment center\nskinparam RectangleBackgroundColor #FFFFFF\nskinparam RectangleBorderColor #333333\nskinparam ArrowColor #666666\n\ntitle Struktur Komponen dan Konektor (C&amp;C)\\nLayanan Tugas Akhir (Subsistem Assignment &amp; Assessment)\n\nnode \&quot;Perangkat Pengguna\&quot; #FCE4D6 {\n    [Browser Mahasiswa / Dosen] as Browser\n}\n\nnode \&quot;Server Aplikasi Kampus\&quot; #DDEBF7 {\n    [Server Web Tugas Akhir] as WebServer\n    [Antrean Pesan (Message Queue)] as Queue\n    [Worker Service] as Worker\n    [Cache Kuota &amp; Jadwal] as Cache\n}\n\nnode \&quot;Server Penyimpanan &amp; Data\&quot; #FFF2CC {\n    [Cloud Object Storage\\n(Berkas Draf &amp; Dokumen)] as Storage\n    [Basis Data Akademik Pusat] as DB\n}\n\n&#39; Konektor antar komponen\nBrowser --&gt; WebServer : HTTPS\nWebServer --&gt; Cache : baca / tulis\nWebServer --&gt; Queue : kirim (publish)\nQueue --&gt; Worker : ambil (consume)\nWorker --&gt; DB : SQL / Transaksi\nWorker --&gt; Storage : simpan / unduh berkas\nWebServer --&gt; DB : SQL (Query Cepat)\n\nnote bottom of Queue\n  &lt;b&gt;Cara Membaca:&lt;/b&gt; Kotak = komponen yang berjalan (proses, layanan, penyimpanan). \n  Panah = konektor dengan jenis interaksinya. Permintaan unggah berkas besar \n  dan penjadwalan sidang masuk ke antrean pesan agar sistem tahan terhadap lonjakan beban[cite: 1].\nend note\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="VBZOsVG1pNsAB1-jFuSN-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Perangkat Pengguna" plantUmlId="c_0" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#FCE4D6;strokeColor=#181818;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;" plantUmlBaseValue="Perangkat Pengguna" id="VBZOsVG1pNsAB1-jFuSN-2">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-1" style="shape=cube;size=10;flipH=1;fillColor=#FCE4D6;strokeColor=#181818;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="105" width="272" x="578.9" y="156" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Browser Mahasiswa / Dosen" plantUmlId="n_1" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" plantUmlBaseValue="Browser Mahasiswa / Dosen" id="VBZOsVG1pNsAB1-jFuSN-3">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-2" style="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" vertex="1">
+            <mxGeometry height="49" width="232" x="15" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_2" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-4">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-3" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="10" relative="1" width="15" x="1" as="geometry">
+              <mxPoint x="-20" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_3" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-5">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-3" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="7" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_4" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-6">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-3" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="11" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Server Aplikasi Kampus" plantUmlId="c_5" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#DDEBF7;strokeColor=#181818;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;" plantUmlBaseValue="Server Aplikasi Kampus" id="VBZOsVG1pNsAB1-jFuSN-7">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-1" style="shape=cube;size=10;flipH=1;fillColor=#DDEBF7;strokeColor=#181818;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="355" width="528.38" x="330" y="309.25" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Server Web Tugas Akhir" plantUmlId="n_6" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" plantUmlBaseValue="Server Web Tugas Akhir" id="VBZOsVG1pNsAB1-jFuSN-8">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-7" style="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" vertex="1">
+            <mxGeometry height="49" width="201" x="279.26" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_7" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-9">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-8" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="10" relative="1" width="15" x="1" as="geometry">
+              <mxPoint x="-20" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_8" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-10">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-8" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="7" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_9" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-11">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-8" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="11" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Antrean Pesan (Message Queue)" plantUmlId="n_10" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" plantUmlBaseValue="Antrean Pesan (Message Queue)" id="VBZOsVG1pNsAB1-jFuSN-12">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-7" style="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" vertex="1">
+            <mxGeometry height="49" width="249" x="26" y="165" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_11" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-13">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-12" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="10" relative="1" width="15" x="1" as="geometry">
+              <mxPoint x="-20" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_12" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-14">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-12" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="7" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_13" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-15">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-12" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="11" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Worker Service" plantUmlId="n_14" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" plantUmlBaseValue="Worker Service" id="VBZOsVG1pNsAB1-jFuSN-16">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-7" style="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" vertex="1">
+            <mxGeometry height="49" width="146" x="173.36" y="290" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_15" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-17">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-16" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="10" relative="1" width="15" x="1" as="geometry">
+              <mxPoint x="-20" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_16" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-18">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-16" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="7" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_17" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-19">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-16" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="11" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Cache Kuota &amp; Jadwal" plantUmlId="n_18" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" plantUmlBaseValue="Cache Kuota &amp; Jadwal" id="VBZOsVG1pNsAB1-jFuSN-20">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-7" style="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" vertex="1">
+            <mxGeometry height="49" width="182" x="310" y="165" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_19" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-21">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-20" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="10" relative="1" width="15" x="1" as="geometry">
+              <mxPoint x="-20" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_20" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-22">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-20" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="7" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_21" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-23">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-20" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="11" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="baca / tulis" plantUmlId="e_32" plantUmlBaseStyle="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=classicThin;endFill=1;align=center;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="baca / tulis" id="VBZOsVG1pNsAB1-jFuSN-34">
+          <mxCell edge="1" parent="VBZOsVG1pNsAB1-jFuSN-7" source="VBZOsVG1pNsAB1-jFuSN-8" style="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=classicThin;endFill=1;align=center;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="VBZOsVG1pNsAB1-jFuSN-20">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="43" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="kirim (publish)" plantUmlId="e_33" plantUmlBaseStyle="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=classicThin;endFill=1;align=center;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="kirim (publish)" id="VBZOsVG1pNsAB1-jFuSN-35">
+          <mxCell edge="1" parent="VBZOsVG1pNsAB1-jFuSN-7" source="VBZOsVG1pNsAB1-jFuSN-8" style="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=classicThin;endFill=1;align=center;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="VBZOsVG1pNsAB1-jFuSN-12">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="53" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ambil (consume)" plantUmlId="e_34" plantUmlBaseStyle="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=center;endArrow=classicThin;endFill=1;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="ambil (consume)" id="VBZOsVG1pNsAB1-jFuSN-36">
+          <mxCell edge="1" parent="VBZOsVG1pNsAB1-jFuSN-7" source="VBZOsVG1pNsAB1-jFuSN-12" style="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=center;endArrow=classicThin;endFill=1;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="VBZOsVG1pNsAB1-jFuSN-16">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="59" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Server Penyimpanan &amp; Data" plantUmlId="c_22" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#FFF2CC;strokeColor=#181818;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;" plantUmlBaseValue="Server Penyimpanan &amp; Data" id="VBZOsVG1pNsAB1-jFuSN-24">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-1" style="shape=cube;size=10;flipH=1;fillColor=#FFF2CC;strokeColor=#181818;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="105" width="491" x="396.32" y="716.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Cloud Object Storage&#xa;(Berkas Draf &amp; Dokumen)" plantUmlId="n_23" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" plantUmlBaseValue="Cloud Object Storage&#xa;(Berkas Draf &amp; Dokumen)" id="VBZOsVG1pNsAB1-jFuSN-25">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-24" style="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" vertex="1">
+            <mxGeometry height="49" width="202" x="15" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_24" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-26">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-25" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="10" relative="1" width="15" x="1" as="geometry">
+              <mxPoint x="-20" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_25" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-27">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-25" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="7" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_26" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-28">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-25" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="11" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Basis Data Akademik Pusat" plantUmlId="n_27" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" plantUmlBaseValue="Basis Data Akademik Pusat" id="VBZOsVG1pNsAB1-jFuSN-29">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-24" style="rounded=1;absoluteArcSize=1;arcSize=6;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;spacingRight=10;spacingTop=9;align=center;" vertex="1">
+            <mxGeometry height="49" width="214" x="252" y="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_28" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-30">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-29" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="10" relative="1" width="15" x="1" as="geometry">
+              <mxPoint x="-20" y="5" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_29" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-31">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-29" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="7" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="ci_30" plantUmlBaseStyle="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" plantUmlBaseValue="" id="VBZOsVG1pNsAB1-jFuSN-32">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-29" style="fillColor=#F1F1F1;strokeColor=#181818;part=1;align=center;" vertex="1">
+            <mxGeometry height="2" relative="1" width="4" x="1" as="geometry">
+              <mxPoint x="-22" y="11" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="HTTPS" plantUmlId="e_31" plantUmlBaseStyle="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=center;endArrow=classicThin;endFill=1;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="HTTPS" id="VBZOsVG1pNsAB1-jFuSN-33">
+          <mxCell edge="1" parent="VBZOsVG1pNsAB1-jFuSN-1" source="VBZOsVG1pNsAB1-jFuSN-3" style="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=center;endArrow=classicThin;endFill=1;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="VBZOsVG1pNsAB1-jFuSN-8">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="25" y="-11" as="offset" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SQL / Transaksi" plantUmlId="e_35" plantUmlBaseStyle="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=classicThin;endFill=1;align=center;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="SQL / Transaksi" id="VBZOsVG1pNsAB1-jFuSN-37">
+          <mxCell edge="1" parent="VBZOsVG1pNsAB1-jFuSN-1" source="VBZOsVG1pNsAB1-jFuSN-16" style="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=classicThin;endFill=1;align=center;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="VBZOsVG1pNsAB1-jFuSN-29">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="76" y="9" as="offset" />
+              <Array as="points">
+                <mxPoint x="598.97" y="666.27" />
+                <mxPoint x="598.36" y="672.19" />
+                <mxPoint x="690.01" y="692.46" />
+                <mxPoint x="723.05" y="723.55" />
+              </Array>
+              <mxPoint x="600.69" y="648.25" as="sourcePoint" />
+              <mxPoint x="719.66" y="756.5" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="simpan / unduh berkas" plantUmlId="e_36" plantUmlBaseStyle="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=center;endArrow=classicThin;endFill=1;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="simpan / unduh berkas" id="VBZOsVG1pNsAB1-jFuSN-38">
+          <mxCell edge="1" parent="VBZOsVG1pNsAB1-jFuSN-1" source="VBZOsVG1pNsAB1-jFuSN-16" style="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=center;endArrow=classicThin;endFill=1;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="VBZOsVG1pNsAB1-jFuSN-25">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="79" y="7" as="offset" />
+              <Array as="points">
+                <mxPoint x="550.31" y="666.27" />
+                <mxPoint x="549.7" y="672.19" />
+                <mxPoint x="512.51" y="692.46" />
+                <mxPoint x="516.49" y="723.55" />
+              </Array>
+              <mxPoint x="552.03" y="648.25" as="sourcePoint" />
+              <mxPoint x="512.3199999999999" y="756.5" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SQL (Query Cepat)" plantUmlId="e_37" plantUmlBaseStyle="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=center;endArrow=classicThin;endFill=1;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="SQL (Query Cepat)" id="VBZOsVG1pNsAB1-jFuSN-39">
+          <mxCell edge="1" parent="VBZOsVG1pNsAB1-jFuSN-1" source="VBZOsVG1pNsAB1-jFuSN-8" style="strokeColor=#666666;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=center;endArrow=classicThin;endFill=1;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="VBZOsVG1pNsAB1-jFuSN-29">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="58" y="132" as="offset" />
+              <Array as="points">
+                <mxPoint x="842.35" y="436.25" />
+                <mxPoint x="840.6700000000001" y="498.75" />
+                <mxPoint x="838.98" y="561.25" />
+                <mxPoint x="837.3" y="623.75" />
+                <mxPoint x="835.97" y="666.27" />
+                <mxPoint x="835.74" y="672.19" />
+                <mxPoint x="834.9300000000001" y="692.46" />
+                <mxPoint x="792.3" y="723.55" />
+              </Array>
+              <mxPoint x="760.01" y="398.25" as="sourcePoint" />
+              <mxPoint x="790.99" y="756.5" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Struktur Komponen dan Konektor (C&amp;amp;C)&#xa;Layanan Tugas Akhir (Subsistem Assignment &amp;amp; Assessment)" plantUmlId="title_40" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" plantUmlBaseValue="Struktur Komponen dan Konektor (C&amp;amp;C)&#xa;Layanan Tugas Akhir (Subsistem Assignment &amp;amp; Assessment)" id="VBZOsVG1pNsAB1-jFuSN-42">
+          <mxCell parent="VBZOsVG1pNsAB1-jFuSN-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="44" width="430" x="490" y="90" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
