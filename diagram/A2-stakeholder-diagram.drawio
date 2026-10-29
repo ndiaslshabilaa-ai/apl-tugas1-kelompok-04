@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Ca-OfmhKaxWIdJNyFuz0">
+    <mxGraphModel dx="1415" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\nskinparam DefaultTextAlignment center\nskinparam RectangleBackgroundColor #FFFFFF\nskinparam RectangleBorderColor #333333\nskinparam ArrowColor #666666\n\ntitle Peta Power/Interest Stakeholder (Mendelow Matrix)\\nLayanan Tugas Akhir (Subsistem Assignment &amp; Assessment)\n\nskinparam rectangle {\n    RoundCorner 10\n}\n\npackage \&quot;Pengaruh (Power) Tinggi\&quot; {\n    rectangle \&quot;&lt;b&gt;Keep Satisfied (Puaskan)&lt;/b&gt;\\n\\n• Tim Pengembang IT (PDTI UMI)\\n• Lembaga Penjaminan Mutu (LPMI)\&quot; as KS #FFF2CC\n    \n    rectangle \&quot;&lt;b&gt;Manage Closely (Kelola dengan Erat)&lt;/b&gt;\\n\\n• Dosen Pembimbing &amp; Penguji\\n• Ketua Program Studi (Kaprodi)\&quot; as MC #FCE4D6\n}\n\npackage \&quot;Pengaruh (Power) Rendah\&quot; {\n    rectangle \&quot;&lt;b&gt;Monitor (Pantau)&lt;/b&gt;\\n\\n• Pihak Eksternal Pendukung\&quot; as M #EAEAEA\n    \n    rectangle \&quot;&lt;b&gt;Keep Informed (Beri Informasi)&lt;/b&gt;\\n\\n• Mahasiswa Akhir\\n• Staf Administrasi Akademik\&quot; as KI #DDEBF7\n}\n\nlegend right\n  &lt;b&gt;Keterangan Sumbu:&lt;/b&gt;\n  • Sumbu Horizontal (Kepentingan/Interest):\n    Kiri ke Kanan (Rendah ke Tinggi)\n  • Sumbu Vertikal (Pengaruh/Power):\n    Bawah ke Atas (Rendah ke Tinggi)\nendlegend\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="Khk0VCS8LV3VygATxpSv-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Pengaruh (Power) Tinggi" plantUmlId="c_0" plantUmlBaseStyle="shape=folder;tabWidth=174;tabHeight=23;tabPosition=left;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=top;spacingLeft=2;spacingTop=-4;" plantUmlBaseValue="Pengaruh (Power) Tinggi" id="Khk0VCS8LV3VygATxpSv-2">
+          <mxCell parent="Khk0VCS8LV3VygATxpSv-1" style="shape=folder;tabWidth=400;tabHeight=24;tabPosition=left;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=top;spacingLeft=2;spacingTop=-4;" vertex="1">
+            <mxGeometry height="124" width="611" x="10" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Keep Satisfied (Puaskan)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Tim Pengembang IT (PDTI UMI)&lt;br&gt;• Lembaga Penjaminan Mutu (LPMI)" plantUmlId="n_1" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=10;strokeWidth=1;fillColor=#FFF2CC;strokeColor=#333333;whiteSpace=wrap;fontSize=14;align=center;html=1;" plantUmlBaseValue="&lt;b&gt;Keep Satisfied (Puaskan)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Tim Pengembang IT (PDTI UMI)&lt;br&gt;• Lembaga Penjaminan Mutu (LPMI)" id="Khk0VCS8LV3VygATxpSv-3">
+          <mxCell parent="Khk0VCS8LV3VygATxpSv-2" style="rounded=1;absoluteArcSize=1;arcSize=10;strokeWidth=1;fillColor=#FFF2CC;strokeColor=#333333;whiteSpace=wrap;fontSize=14;align=center;html=1;" vertex="1">
+            <mxGeometry height="78" width="269" x="15" y="34" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Manage Closely (Kelola dengan Erat)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Dosen Pembimbing &amp;amp; Penguji&lt;br&gt;• Ketua Program Studi (Kaprodi)" plantUmlId="n_2" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=10;strokeWidth=1;fillColor=#FCE4D6;strokeColor=#333333;whiteSpace=wrap;fontSize=14;align=center;html=1;" plantUmlBaseValue="&lt;b&gt;Manage Closely (Kelola dengan Erat)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Dosen Pembimbing &amp;amp; Penguji&lt;br&gt;• Ketua Program Studi (Kaprodi)" id="Khk0VCS8LV3VygATxpSv-4">
+          <mxCell parent="Khk0VCS8LV3VygATxpSv-2" style="rounded=1;absoluteArcSize=1;arcSize=10;strokeWidth=1;fillColor=#FCE4D6;strokeColor=#333333;whiteSpace=wrap;fontSize=14;align=center;html=1;" vertex="1">
+            <mxGeometry height="78" width="277" x="319" y="34" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Pengaruh (Power) Rendah" plantUmlId="c_3" plantUmlBaseStyle="shape=folder;tabWidth=181;tabHeight=23;tabPosition=left;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=top;spacingLeft=2;spacingTop=-4;" plantUmlBaseValue="Pengaruh (Power) Rendah" id="Khk0VCS8LV3VygATxpSv-5">
+          <mxCell parent="Khk0VCS8LV3VygATxpSv-1" style="shape=folder;tabWidth=365;tabHeight=24;tabPosition=left;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=top;spacingLeft=2;spacingTop=-4;" vertex="1">
+            <mxGeometry height="124" width="536" x="645" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Monitor (Pantau)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Pihak Eksternal Pendukung" plantUmlId="n_4" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=10;strokeWidth=1;fillColor=#EAEAEA;strokeColor=#333333;whiteSpace=wrap;fontSize=14;align=center;html=1;" plantUmlBaseValue="&lt;b&gt;Monitor (Pantau)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Pihak Eksternal Pendukung" id="Khk0VCS8LV3VygATxpSv-6">
+          <mxCell parent="Khk0VCS8LV3VygATxpSv-5" style="rounded=1;absoluteArcSize=1;arcSize=10;strokeWidth=1;fillColor=#EAEAEA;strokeColor=#333333;whiteSpace=wrap;fontSize=14;align=center;html=1;" vertex="1">
+            <mxGeometry height="62" width="229" x="15" y="42" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Keep Informed (Beri Informasi)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Mahasiswa Akhir&lt;br&gt;• Staf Administrasi Akademik" plantUmlId="n_5" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=10;strokeWidth=1;fillColor=#DDEBF7;strokeColor=#333333;whiteSpace=wrap;fontSize=14;align=center;html=1;" plantUmlBaseValue="&lt;b&gt;Keep Informed (Beri Informasi)&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Mahasiswa Akhir&lt;br&gt;• Staf Administrasi Akademik" id="Khk0VCS8LV3VygATxpSv-7">
+          <mxCell parent="Khk0VCS8LV3VygATxpSv-5" style="rounded=1;absoluteArcSize=1;arcSize=10;strokeWidth=1;fillColor=#DDEBF7;strokeColor=#333333;whiteSpace=wrap;fontSize=14;align=center;html=1;" vertex="1">
+            <mxGeometry height="78" width="242" x="279" y="34" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Peta Power/Interest Stakeholder (Mendelow Matrix)&#xa;Layanan Tugas Akhir (Subsistem Assignment &amp;amp; Assessment)" plantUmlId="title_6" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" plantUmlBaseValue="Peta Power/Interest Stakeholder (Mendelow Matrix)&#xa;Layanan Tugas Akhir (Subsistem Assignment &amp;amp; Assessment)" id="Khk0VCS8LV3VygATxpSv-8">
+          <mxCell parent="Khk0VCS8LV3VygATxpSv-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="44" width="430" x="381" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Keterangan Sumbu:&lt;/b&gt;&lt;br&gt;• Sumbu Horizontal (Kepentingan/Interest):&lt;br&gt;  Kiri ke Kanan (Rendah ke Tinggi)&lt;br&gt;• Sumbu Vertikal (Pengaruh/Power):&lt;br&gt;  Bawah ke Atas (Rendah ke Tinggi)" plantUmlId="legend_0" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=15;fillColor=#DDDDDD;strokeColor=#000000;strokeWidth=1;fontColor=#000000;fontSize=14;align=center;verticalAlign=top;spacing=0;spacingLeft=5;spacingTop=1;spacingRight=5;whiteSpace=nowrap;html=1;" plantUmlBaseValue="&lt;b&gt;Keterangan Sumbu:&lt;/b&gt;&lt;br&gt;• Sumbu Horizontal (Kepentingan/Interest):&lt;br&gt;  Kiri ke Kanan (Rendah ke Tinggi)&lt;br&gt;• Sumbu Vertikal (Pengaruh/Power):&lt;br&gt;  Bawah ke Atas (Rendah ke Tinggi)" id="Khk0VCS8LV3VygATxpSv-9">
+          <mxCell parent="Khk0VCS8LV3VygATxpSv-1" style="rounded=1;absoluteArcSize=1;arcSize=15;fillColor=#DDDDDD;strokeColor=#000000;strokeWidth=1;fontColor=#000000;fontSize=14;align=center;verticalAlign=top;spacing=0;spacingLeft=5;spacingTop=1;spacingRight=5;whiteSpace=nowrap;html=1;" vertex="1">
+            <mxGeometry height="92.44" width="306.88" x="869.12" y="230" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
