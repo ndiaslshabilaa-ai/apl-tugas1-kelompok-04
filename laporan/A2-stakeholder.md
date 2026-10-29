@@ -30,3 +30,5 @@ Berdasarkan tingkat pengaruh (*power*) dan kepentingan (*interest*), penempatan 
   * *Mahasiswa Akhir* dan *Staf Administrasi Akademik*. Kelompok ini sangat bergantung pada sistem dan memiliki kepentingan tinggi, namun daya tawar atau pengaruh strukturalnya rendah, sehingga perlu diberikan informasi berkala serta saluran umpan balik.
 * **Monitor (Pantau - Power Rendah, Interest Rendah):**
   * Pihak eksternal pendukung lain yang tidak berdampak langsung secara signifikan terhadap inti proses bisnis layanan tugas akhir.
+ 
+ ![Diagram modul](../diagram/A2-stakeholder-diagram.drawio.png)
