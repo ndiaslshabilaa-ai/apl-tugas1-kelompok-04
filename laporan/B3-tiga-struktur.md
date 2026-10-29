@@ -36,4 +36,4 @@ Struktur alokasi menjawab dua hal utama: di mana perangkat lunak dijalankan pada
   * **Tim B:** Bertanggung jawab pada modul logika bisnis (*Pengelola Tugas Akhir*, *Validasi SKS & Kuota*, *Penjadwalan Sidang*).
   * **Tim C:** Bertanggung jawab pada modul penyimpanan dan data (*Repositori Dokumen Skripsi*, *Repositori Nilai Akademik*).
   * **Tim D:** Bertanggung jawab pada infrastruktur cloud, manajemen *message queue*, serta pengujian beban sistem (*load testing*).
-> **Keterangan Diagram:** Aplikasi inti dijalankan pada server aplikasi di cloud kampus, sementara data master tetap berada di server data pusat universitas[cite: 1]. Pembagian modul ke dalam empat tim terstruktur memungkinkan proses pengembangan kode dapat berjalan secara paralel[cite: 1].
+> **Keterangan Diagram:** Aplikasi inti dijalankan pada server aplikasi di cloud kampus, sementara data master tetap berada di server data pusat universitas. Pembagian modul ke dalam empat tim terstruktur memungkinkan proses pengembangan kode dapat berjalan secara paralel.
