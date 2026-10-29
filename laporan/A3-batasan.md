@@ -2,8 +2,6 @@
 
 <!-- Penanggung jawab: [Artika Milad Arhidayah] -->
 
-# A3. Batasan Sistem
-
 Berikut adalah batasan-batasan sistem pada Layanan Tugas Akhir yang dikelompokkan ke dalam tiga kategori utama (teknologi, bisnis, dan operasional), beserta analisis dampaknya terhadap perancangan arsitektur perangkat lunak:
 
 ## 1. Batasan Teknologi (Technology Constraints)
