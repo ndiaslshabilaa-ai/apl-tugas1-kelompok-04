@@ -2,8 +2,6 @@
 
 <!-- Penanggung jawab: [Artika Milad Arhidayah] -->
 
-# A1. Analisis Empat Konteks Arsitektur pada Layanan Tugas Akhir
-
 Tabel di bawah ini menjabarkan kondisi Layanan Tugas Akhir pada subsistem *Assignment & Assessment* di lingkungan Universitas Muslim Indonesia (UMI) berdasarkan empat konteks arsitektur perangkat lunak:
 
 | Konteks Arsitektur | Kondisi Subsistem pada Layanan Tugas Akhir |
