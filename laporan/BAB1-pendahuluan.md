@@ -5,17 +5,23 @@
 
 ## 1.1 Gambaran layanan inti
 Layanan Tugas Akhir adalah bagian dari subsistem Assignment & Assessment di lingkungan Universitas Muslim Indonesia (UMI). Layanan ini mendukung seluruh proses penyelesaian studi mahasiswa tingkat akhir secara digital, mulai dari pengajuan judul, penentuan dosen pembimbing, pencatatan logbook bimbingan, pengunggahan berkas draf, pendaftaran dan penjadwalan sidang, sampai penilaian dan rekapitulasi nilai sidang akhir.
+
 Dari sisi teknis, layanan ini terintegrasi dengan basis data pusat SIAKAD untuk memvalidasi prasyarat SKS kelulusan mahasiswa. Layanan ini juga terhubung dengan sistem manajemen dokumen digital untuk mengelola berkas draf skripsi secara aman. Pengembangan dan pemeliharaannya dilakukan secara iteratif oleh tim pengembang internal kampus, menyesuaikan kalender akademik dan regulasi ujian penutupan studi. Pengelolaan dilakukan oleh tenaga profesional Pusat Data dan Teknologi Informasi (PDTI) UMI dengan standar kepatuhan terhadap keamanan data akademik dan privasi dokumen mahasiswa.
+
 Dari sisi bisnis, layanan ini bertujuan mempercepat proses administratif akademik, meningkatkan transparansi riwayat bimbingan antara mahasiswa dan dosen, serta menjamin akurasi rekapitulasi nilai sidang akhir.
+
 Terdapat enam pemangku kepentingan yang dipetakan dengan matriks Power/Interest (Mendelow Matrix) [5], seperti pada Gambar 1:
+
 •	Manage Closely: Dosen Pembimbing & Penguji, serta Ketua Program Studi (Kaprodi).
 •	Keep Satisfied: Tim Pengembang IT (PDTI UMI) dan Lembaga Penjaminan Mutu (LPMI).
 •	Keep Informed: Mahasiswa Akhir dan Staf Administrasi Akademik.
 •	Monitor: Pihak eksternal pendukung lainnya.
-Gambar 1. Peta Power/Interest Stakeholder (Mendelow Matrix)
-Gambar 1. Peta Power/Interest Stakeholder (Mendelow Matrix) Layanan Tugas Akhir.
-Perancangan arsitektur layanan ini berpedoman pada praktik arsitektur perangkat lunak [1][2]. Tiga karakteristik pendorong utamanya adalah Performance Efficiency, Security & Integrity, dan Maintainability, yang dipetakan ke standar ISO/IEC 25010 [3]. Keputusan arsitektur dicatat dalam format Architecture Decision Record (ADR) [4].
 
+Gambar 1. Peta Power/Interest Stakeholder (Mendelow Matrix)
+
+Gambar 1. Peta Power/Interest Stakeholder (Mendelow Matrix) Layanan Tugas Akhir.
+
+Perancangan arsitektur layanan ini berpedoman pada praktik arsitektur perangkat lunak [1][2]. Tiga karakteristik pendorong utamanya adalah Performance Efficiency, Security & Integrity, dan Maintainability, yang dipetakan ke standar ISO/IEC 25010 [3]. Keputusan arsitektur dicatat dalam format Architecture Decision Record (ADR) [4].
 
 
 ## 1.2 Ruang lingkup (3-5 kasus penggunaan)
