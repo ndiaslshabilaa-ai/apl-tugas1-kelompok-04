@@ -1,0 +1,17 @@
+# ADR-[001]: [Sistem Antrean]
+
+# ADR-001: Penerapan Sistem Antrean (Queue System) untuk Pendaftaran Kamar
+
+* **Status:** Diusulkan
+* **Tanggal:** 29-10-2026
+* **Pengambil keputusan:** Nurul Qamri Ramadhina
+
+## Context
+Pendaftaran rusunawa dibuka secara serentak pada jadwal yang telah ditentukan setiap awal semester. Hal ini memicu ratusan hingga ribuan mahasiswa mengakses sistem secara bersamaan untuk berebut kuota kamar yang terbatas. Berdasarkan temuan di lapangan, lonjakan akses (*traffic spike*) ini berisiko membuat *server overload*, *down*, dan menyebabkan *race condition* (kondisi di mana dua mahasiswa berhasil mendaftar untuk satu ranjang yang sama di detik yang sama). Keputusan ini berkaitan dengan ASR performa dan ketersediaan (*availability*).
+
+## Decision
+Kami akan menerapkan mekanisme pemrosesan antrean latar belakang (*background job / queue system*) pada fitur pendaftaran awal kamar rusunawa. Permintaan pendaftaran dari mahasiswa tidak akan dieksekusi secara instan di proses utama, melainkan akan dimasukkan ke dalam antrean (menggunakan *message broker* seperti Redis atau RabbitMQ) untuk divalidasi dan diproses satu per satu secara berurutan oleh *worker*.
+
+## Consequences
+* **Positif:** Beban *server* tetap stabil dan sistem tidak *down* saat terjadi lonjakan akses. Integritas data ketersediaan kamar lebih terjamin karena terhindar dari *race condition*.
+* **Negatif:** Mahasiswa tidak akan mendapatkan konfirmasi hasil pendaftaran secara instan dan harus menunggu notifikasi setelah antrean mereka selesai diproses. Sistem juga menjadi lebih kompleks karena membutuhkan tambahan komponen infrastruktur (*message broker*).
