@@ -16,7 +16,7 @@ Konteks & Keputusan Arsitektur (Pertemuan 5) serta Karakteristik Arsitektur & At
 | 1 |13020240260| B.Nadia Salsabila| @ndiaslshabilaa |A2,A3,B1 |
 | 2 |13020240049| Artika Milad Arhidayah| @artikaarhidayah10 |BAB 1, A5, B4 |
 | 3 |13020240332| Annisa Rezky Ashriani| @annisarezky |A1, B5, BAB IV |
-| 4 |13020240279| Andi Naqia Aura WR| @auranaqia | |
+| 4 |13020240279| Andi Naqia Aura WR| @auranaqia |B2,B3|
 
 ## Peta berkas dan penanggung jawab
 
@@ -31,8 +31,8 @@ Status: Belum / Draf / Selesai. Perbarui tabel ini setiap ada perubahan.
 | A4 | laporan/A4-asr.md | | Belum |
 | A5 | laporan/A5-keputusan-arsitektur.md dan adr/ |Artika Milad Arhidayah | Belum |
 | B1 | laporan/B1-karakteristik.md |B.Nadia Salsabila | Belum |
-| B2 | laporan/B2-atribut-terukur.md | | Belum |
-| B3 | laporan/B3-tiga-struktur.md dan diagram/ | | Belum |
+| B2 | laporan/B2-atribut-terukur.md | Andi Naqia Aura W.R| Belum |
+| B3 | laporan/B3-tiga-struktur.md dan diagram/ | Andi Naqia Aura W.R | Belum |
 | B4 | laporan/B4-iso-25010.md |Artika Milad Arhidayah | Belum |
 | B5 | laporan/B5-trade-off.md |Annisa Rezky Ashriani| Belum |
 | BAB IV | laporan/BAB4-penutup.md |Annisa Rezky Ashriani | Belum |
