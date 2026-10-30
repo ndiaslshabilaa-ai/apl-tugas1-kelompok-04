@@ -1,6 +1,5 @@
 # BAB I. Pendahuluan
 
-<!-- Gambaran subsistem dan layanan inti yang ditugaskan, ruang lingkup, dan sumber data. -->
 <!-- Penanggung jawab: [Annisa Rezzky Ashriani] -->
 
 ## 1.1 Gambaran layanan inti
@@ -53,5 +52,3 @@ Dokumen ini disusun dari hasil analisis kelompok berikut.
 6.	Identifikasi karakteristik arsitektur, atribut kualitas terukur, pemetaan ke ISO/IEC 25010 [3], dan analisis trade-off.
 7.	Tiga struktur desain (modul, komponen dan konektor, serta alokasi) pada Gambar 2 sampai Gambar 4.
 8.	Literatur pendukung pada Daftar Pustaka [1]–[5].
-
-
