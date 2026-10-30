@@ -12,6 +12,8 @@ Berdasarkan analisis dan perancangan yang telah dilakukan, kesimpulan arsitektur
 6.	Arsitektur dijabarkan dalam tiga struktur: struktur modul berlapis presentasi, logika bisnis, dan data (Gambar 2); struktur C&C yang menghubungkan browser, server web, cache, message queue, worker, Cloud Object Storage, dan basis data pusat (Gambar 3); serta struktur alokasi berupa penempatan di cloud kampus dan pembagian modul ke Tim A sampai Tim D (Gambar 4).
 7.	Analisis trade-off menunjukkan bahwa Security didahulukan untuk modul nilai sidang dan lembar pengesahan, sedangkan Performance Efficiency didahulukan untuk logbook dan pengajuan judul. Maintainability didahulukan atas fleksibilitas melalui satu alur standar universitas dengan kustomisasi minimal.
 
+
+
 ## 4.2 Saran
 1.	Pengujian sebelum peluncuran. Lakukan load testing (misalnya dengan JMeter atau k6) dan penetration testing dasar serta pengujian RBAC sebelum masa pendaftaran sidang, agar target kinerja dan keamanan terverifikasi.
 2.	Pemantauan operasional. Terapkan logging, error tracking, dan queue monitoring otomatis agar tim PDTI yang jumlahnya terbatas tetap dapat menjaga stabilitas sistem.
