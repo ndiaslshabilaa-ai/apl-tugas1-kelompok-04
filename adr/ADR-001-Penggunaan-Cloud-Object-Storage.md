@@ -1,4 +1,4 @@
-ADR-001: Penggunaan Cloud Object Storage untuk Berkas Draf Tugas Akhir
+## ADR-001: Penggunaan Cloud Object Storage untuk Berkas Draf Tugas Akhir
 - Status: Diterima
 - Tanggal: 28-10-2026
 - Pengambil keputusan: Artika Milad Arhidayah
