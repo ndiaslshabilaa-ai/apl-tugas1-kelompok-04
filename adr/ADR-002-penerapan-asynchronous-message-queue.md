@@ -1,6 +1,6 @@
 ## ADR-002: Penerapan Asynchronous Message Queue untuk Proses Penjadwalan Sidang
 - Status: Diterima
-- Tanggal: 24-10-2026
+- Tanggal: 29-10-2026
 - Pengambil keputusan: Artika Milad Arhidayah
 
 ## Context
