@@ -24,19 +24,19 @@ Status: Belum / Draf / Selesai. Perbarui tabel ini setiap ada perubahan.
 
 | Kode | Berkas | Penanggung jawab | Status |
 |---|---|---|---|
-| BAB I | laporan/BAB1-pendahuluan.md |Artika Milad Arhidayah | Belum |
-| A1 | laporan/A1-konteks-arsitektur.md |Annisa Rezky Ashriani | Belum |
-| A2 | laporan/A2-stakeholder.md |B.Nadia Salsabila | Belum |
-| A3 | laporan/A3-batasan.md |B.Nadia Salsabila | Belum |
-| A4 | laporan/A4-asr.md | | Belum |
-| A5 | laporan/A5-keputusan-arsitektur.md dan adr/ |Artika Milad Arhidayah | Belum |
-| B1 | laporan/B1-karakteristik.md |B.Nadia Salsabila | Belum |
-| B2 | laporan/B2-atribut-terukur.md | Andi Naqia Aura W.R| Belum |
-| B3 | laporan/B3-tiga-struktur.md dan diagram/ | Andi Naqia Aura W.R | Belum |
-| B4 | laporan/B4-iso-25010.md |Artika Milad Arhidayah | Belum |
-| B5 | laporan/B5-trade-off.md |Annisa Rezky Ashriani| Belum |
-| BAB IV | laporan/BAB4-penutup.md |Annisa Rezky Ashriani | Belum |
-| Pustaka | laporan/daftar-pustaka.md | | Belum |
+| BAB I | laporan/BAB1-pendahuluan.md |Annisa Rezky Ashriani | Selesai |
+| A1 | laporan/A1-konteks-arsitektur.md |Artika Milad Arhidayah | Selesai |
+| A2 | laporan/A2-stakeholder.md |Artika Milad Arhidayah | Selesai |
+| A3 | laporan/A3-batasan.md |Artika Milad Arhidayah | Selesai |
+| A4 | laporan/A4-asr.md |Artika Milad Arhidayah | Selesai |
+| A5 | laporan/A5-keputusan-arsitektur.md dan adr/ |Artika Milad Arhidayah | Selesai |
+| B1 | laporan/B1-karakteristik.md |Artika Milad Arhidayah | Selesai |
+| B2 | laporan/B2-atribut-terukur.md |Artika Milad Arhidayah | Selesai |
+| B3 | laporan/B3-tiga-struktur.md dan diagram/ |Artika Milad Arhidayah | Selesai |
+| B4 | laporan/B4-iso-25010.md |Artika Milad Arhidayah | Selesai |
+| B5 | laporan/B5-trade-off.md |Artika Milad Arhidayah | Selesai |
+| BAB IV | laporan/BAB4-penutup.md |Annisa Rezky Ashriani | Selesai |
+| Pustaka | laporan/daftar-pustaka.md |Annisa Rezky Ashriani | Selesai |
 
 ## Laporan PDF terakhir
 
