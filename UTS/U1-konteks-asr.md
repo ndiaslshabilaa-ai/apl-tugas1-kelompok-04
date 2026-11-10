@@ -6,7 +6,8 @@ Layanan Tugas Akhir merupakan salah satu layanan akademik pada platform *Smart C
 Proses lainnya meliputi pengumpulan dan pemeriksaan berkas persyaratan, pengaturan jadwal seminar dan sidang akhir, serta pencatatan nilai hasil penilaian. Dengan adanya layanan ini, mahasiswa, dosen, dan staf akademik dapat mengelola setiap tahapan tugas akhir dengan lebih mudah dan teratur.
 
 ## 1.2 Masalah Utama Layanan dan Bukti Lapangan
-* **Masalah Utama:** 
+* **Masalah Utama:**
+  
 Berdasarkan hasil wawancara dengan lima responden, ditemukan beberapa kendala dalam pengelolaan Layanan Tugas Akhir. Permasalahan utama meliputi lambatnya respons layanan hingga berpotensi terjadi request timeout, serta kegagalan atau lamanya proses unggah draf skripsi, terutama pada dokumen berukuran besar dan memiliki banyak gambar. Peningkatan jumlah pengguna secara bersamaan saat pembukaan pendaftaran juga dapat menyebabkan layanan sulit diakses dan mengganggu proses pendaftaran seminar maupun sidang.
 
 Selain itu, pencatatan bimbingan dan revisi belum terkelola dengan baik sehingga riwayat perkembangan tugas akhir terkadang sulit dipantau. Kendala lainnya mencakup informasi persyaratan sidang yang kurang jelas, penjadwalan yang berpotensi berbenturan, pemantauan kuota dosen pembimbing, serta pemeriksaan berkas mahasiswa yang masih harus dilakukan berulang kali.
