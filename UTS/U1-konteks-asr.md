@@ -1,7 +1,7 @@
 # U1. Konteks dan ASR (Architectural Significant Requirements)
 
 ## 1.1 Ringkasan Layanan
-Layanan Tugas Akhir (subsistem *Assignment & Assessment*) merupakan bagian integral dari platform *Smart Campus* Universitas Muslim Indonesia (UMI). Sistem ini dirancang untuk mendigitalkan dan mengelola seluruh siklus akademik mahasiswa tingkat akhir, mulai dari pengajuan judul proposal, pencatatan bimbingan (*logbook*), penjadwalan seminar/sidang, hingga pengarsipan dokumen draf skripsi dan rekapitulasi nilai akhir secara terpusat.
+Layanan Tugas Akhir (subsistem *Assignment & Assessment*) merupakan bagian integral dari platform *Smart Campus* Universitas Muslim Indonesia (UMI). Sistem ini dirancang untuk mendigitalkan dan mengelola seluruh siklus akademik mahasiswa tingkat akhir—mulai dari pengajuan judul proposal, pencatatan bimbingan (*logbook*), penjadwalan seminar/sidang, hingga pengarsipan dokumen draf skripsi dan rekapitulasi nilai akhir secara terpusat.
 
 ## 1.2 Masalah Utama Layanan dan Bukti Lapangan
 * **Masalah Utama:** 
@@ -9,12 +9,13 @@ Layanan Tugas Akhir (subsistem *Assignment & Assessment*) merupakan bagian integ
 * **Bukti Lapangan (Berdasarkan Wawancara Responden):**
   * **R1 (Mahasiswa Akhir):** Mengalami kegagalan berulang (*upload failed*) saat mengunggah draf skripsi mendekati batas waktu (*deadline*) akibat server tidak responsif.
   * **R2 (Dosen Pembimbing/Penguji):** Mengeluhkan kesulitan melacak riwayat bimbingan dan keabsahan dokumen revisi karena tercecer di luar platform resmi.
+  * **R4 (Staf Administrasi Akademik):** Mengonfirmasi bahwa proses verifikasi berkas persyaratan sidang sering kewalahan dan terhambat karena data pendaftaran menumpuk secara manual, tidak sinkron, serta banyak berkas fisik/digital yang tercecer akibat ketiadaan sistem rekapitulasi terpusat.
 
 ## 1.3 Stakeholder Utama
 1. **Mahasiswa Tingkat Akhir (Calon & Pendaftar Sidang):** Mengakses pendaftaran, mengunggah draf skripsi, dan memantau jadwal sidang. *(Kategori: Keep Informed / Power: Rendah, Interest: Tinggi)*
 2. **Dosen Pembimbing & Penguji:** Melakukan validasi bimbingan, menilai ujian sidang, dan memberikan catatan revisi. *(Kategori: Manage Closely / Power: Tinggi, Interest: Tinggi)*
-3. **Ketua Program Studi / Fakultas:** Mengawasi rekapitulasi kelulusan dan menetapkan kuota penguji. *(Kategori: Keep Satisfied / Power: Tinggi, Interest: Rendah)*
-4. **Tim Pengembang IT Kampus (DevOps & Backend):** Memelihara infrastruktur server dan memastikan keandalan sistem. *(Kategori: Monitor / Power: Rendah, Interest: Rendah)*
+3. **Ketua Program Studi / Fakultas:** Mengawasi rekapitulasi kelulusan, memantau progres kelayakan sidang, dan menetapkan kebijakan penugasan penguji. *(Kategori: Keep Satisfied / Power: Tinggi, Interest: Rendah)*
+4. **Staf Administrasi Akademik:** Mengelola verifikasi berkas administrasi syarat sidang, mengonfirmasi status pendaftaran mahasiswa, serta membantu rekapitulasi jadwal dan berita acara sidang. *(Kategori: Manage Closely / Power: Sedang-Tinggi, Interest: Tinggi)*
 
 ## 1.4 Kebutuhan Signifikan Arsitektur (ASR) & Karakteristik Pendorong
 * **ASR-1 (Performance Efficiency):** Sistem harus mampu menangani 500 pengguna konkuren pada saat pendaftaran sidang serentak tanpa mengalami *downtime* atau *server crash*.
@@ -27,6 +28,6 @@ Layanan Tugas Akhir (subsistem *Assignment & Assessment*) merupakan bagian integ
 
 ## 1.5 Bagian yang Diperbarui dari Tugas Kelompok Sebelumnya
 Dibandingkan dengan tugas sebelumnya, bagian ini diperbarui dengan:
-* Penajaman fokus pada akar permasalahan teknis (*traffic spike* pendaftaran dan kegagalan unggah berkas).
-* Penguatan bukti empiris berdasarkan transkrip wawancara lintas peran (R1, R2, dan R5).
+* Penajaman fokus pada akar permasalahan teknis (*traffic spike* pendaftaran dan hambatan verifikasi administratif).
+* Penguatan bukti empiris berdasarkan transkrip wawancara lintas peran yang melibatkan mahasiswa, dosen, serta staf administrasi akademik.
 * Perumusan spesifikasi ASR yang terikat langsung dengan karakteristik pendorong kualitas perangkat lunak.
