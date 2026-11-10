@@ -14,8 +14,11 @@ Selain itu, pencatatan bimbingan dan revisi belum terkelola dengan baik sehingga
 
 Beberapa temuan tersebut diperoleh dari wawancara dengan responden sebagai berikut:
 * **Bukti Lapangan (Berdasarkan Wawancara Responden):**
+  
   **R1 Mahasiswa Akhir(25 Oktober 2026):** Akses melambat saat pendaftaran ramai, notifikasi persetujuan logbook belum otomatis, dan unggah dokumen terkendala ukuran file.
+  
   **R3 Dosen Pembimbing/Penguji(26 Oktober 2026):** Pemeriksaan draf dan riwayat bimbingan belum terpusat; jadwal sidang berpotensi berbenturan dengan jadwal mengajar.
+  
   **R5 Staf administrasi akademik (27 Oktober 2026):** Berkas persyaratan yang tidak lengkap atau salah format menyebabkan pemeriksaan harus dilakukan berulang kali. Penggunaan ruangan sidang juga berpotensi berbenturan saat periode puncak.
     
 ## 1.3 Stakeholder Utama
