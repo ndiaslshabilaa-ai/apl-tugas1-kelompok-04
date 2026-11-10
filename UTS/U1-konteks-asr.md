@@ -23,21 +23,33 @@ Beberapa temuan tersebut diperoleh dari wawancara dengan responden sebagai berik
     
 ## 1.3 Stakeholder Utama
 Pihak-pihak yang memiliki peran dalam pengelolaan Layanan Tugas Akhir pada subsistem Assignment & Assessment Universitas Muslim Indonesia (UMI) adalah sebagai berikut:
+
 **1	Mahasiswa tingkat akhir	Mengajukan judul, mengisi logbook, mengunggah dokumen, dan memantau status persetujuan tugas akhir.	Keep Informed**
+
 **2	Dosen pembimbing dan penguji	Memeriksa judul dan dokumen, memberikan bimbingan, serta melakukan penilaian seminar dan sidang.	Key Player**
+
 **3	Ketua Program Studi	Mengatur penugasan dosen pembimbing, memantau perkembangan mahasiswa, dan mengawasi hasil kelulusan.	Key Player**
+
 **4	Staf administrasi akademik	Memeriksa persyaratan mahasiswa, mengatur jadwal dan ruangan sidang, serta mengelola data nilai.	Keep Informed**
 
 ## 1.4 Kebutuhan Signifikan Arsitektur (ASR) 
 Berdasarkan hasil analisis dan wawancara, terdapat tiga kebutuhan utama yang perlu diperhatikan dalam perancangan Layanan Tugas Akhir, yaitu:
+
 **1	Performance (Kinerja)**:Layanan harus mampu menangani hingga 500 pengguna secara bersamaan dengan target waktu muat halaman rata-rata kurang dari 3 detik.
+
 **2	Integrity & Auditability**:Setiap aktivitas penting, seperti pengajuan judul, persetujuan bimbingan, dan pencatatan nilai harus tersimpan serta memiliki riwayat yang dapat ditelusuri.
+
 **3	Security (Keamanan)**:Dokumen tugas akhir dan nilai mahasiswa harus terlindungi serta hanya dapat diakses oleh pihak yang memiliki wewenang.
+
 Ketiga kebutuhan tersebut diprioritaskan agar layanan tetap responsif, data terjaga, dan setiap proses tugas akhir dapat dipantau dengan baik.
 
 ## 1.5 Keterkaitan Quality Drivers dengan ASR
  Quality Drivers dipilih berdasarkan kebutuhan utama Layanan Tugas Akhir. Hubungan antara keduanya dapat dilihat pada tabel berikut:
+ 
 **1	Performance Efficiency**:	Performance	Membantu layanan tetap cepat meskipun diakses banyak pengguna secara bersamaan.
+
 **2	Security & Integrity**:	Security dan Integrity & Auditability	Menjaga data tugas akhir agar tidak diakses sembarang pihak dan memastikan setiap aktivitas penting tercatat.
+
 **3	Maintainability**:	Mendukung seluruh ASR	Memudahkan pengelolaan dan perbaikan layanan jika ada perubahan aturan akademik.
+
 Ketiga Quality Drivers tersebut dipilih karena sesuai dengan kendala dan kebutuhan yang ditemukan dari hasil wawancara. Dengan begitu, layanan diharapkan lebih mudah digunakan, aman, dan tidak sulit diperbaiki ketika diperlukan.
