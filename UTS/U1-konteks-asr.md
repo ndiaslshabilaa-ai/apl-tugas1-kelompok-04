@@ -9,7 +9,6 @@ Layanan Tugas Akhir (subsistem *Assignment & Assessment*) merupakan bagian integ
 * **Bukti Lapangan (Berdasarkan Wawancara Responden):**
   * **R1 (Mahasiswa Akhir):** Mengalami kegagalan berulang (*upload failed*) saat mengunggah draf skripsi mendekati batas waktu (*deadline*) akibat server tidak responsif.
   * **R2 (Dosen Pembimbing/Penguji):** Mengeluhkan kesulitan melacak riwayat bimbingan dan keabsahan dokumen revisi karena tercecer di luar platform resmi.
-  * **R5 (Tim Pengembang IT Kampus):** Mengonfirmasi bahwa server monolitik eksisting sering mengalami lonjakan beban CPU hingga 95% saat ribuan mahasiswa mengakses halaman pendaftaran secara serentak.
 
 ## 1.3 Stakeholder Utama
 1. **Mahasiswa Tingkat Akhir (Calon & Pendaftar Sidang):** Mengakses pendaftaran, mengunggah draf skripsi, dan memantau jadwal sidang. *(Kategori: Keep Informed / Power: Rendah, Interest: Tinggi)*
