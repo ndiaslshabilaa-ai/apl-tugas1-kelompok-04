@@ -19,32 +19,4 @@ Bagian ini mendokumentasikan tiga prinsip desain perangkat lunak yang diterapkan
 ### Diagram 1: Diagram Konteks & Aktor (*Use Case / Context Diagram*)
 * **Keterangan:** Diagram ini memetakan batas sistem (*system boundary*) Layanan Tugas Akhir beserta interaksi tiga aktor utama di luar sistem, yaitu Mahasiswa Akhir (pendaftar dan pengunggah draf), Dosen Pembimbing & Penguji (pengelola bimbingan dan penilai ujian), serta Staf Administrasi Akademik (verifikator berkas dan penjadwal).
 
-```plantuml
-@startuml
-left to right direction
-skinparam monochrome true
-
-actor "Mahasiswa Akhir" as Mhs
-actor "Dosen Pembimbing & Penguji" as Dsn
-actor "Staf Administrasi Akademik" as Adm
-
-rectangle "Sistem Layanan Tugas Akhir (Smart Campus UMI)" {
-  usecase "Pengajuan Judul & Pendaftaran Sidang" as UC1
-  usecase "Pencatatan & Validasi Bimbingan (Logbook)" as UC2
-  usecase "Verifikasi Berkas & Penjadwalan Sidang" as UC3
-  usecase "Input & Rekapitulasi Nilai Ujian" as UC4
-}
-
-' Interaksi Mahasiswa
-Mhs --> UC1
-Mhs --> UC2
-Mhs --> UC3
-
-' Interaksi Dosen
-Dsn --> UC2
-Dsn --> UC4
-
-' Interaksi Staf Administrasi Akademik
-Adm --> UC3
-Adm --> UC4
-@enduml
+![Diagram modul](../diagram/Diagramkonteks.drawio.png)
