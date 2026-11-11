@@ -19,4 +19,4 @@ Bagian ini mendokumentasikan tiga prinsip desain perangkat lunak yang diterapkan
 ### Diagram 1: Diagram Konteks & Aktor (*Use Case / Context Diagram*)
 * **Keterangan:** Diagram ini memetakan batas sistem (*system boundary*) Layanan Tugas Akhir beserta interaksi tiga aktor utama di luar sistem, yaitu Mahasiswa Akhir (pendaftar dan pengunggah draf), Dosen Pembimbing & Penguji (pengelola bimbingan dan penilai ujian), serta Staf Administrasi Akademik (verifikator berkas dan penjadwal).
 
-![Diagram modul](../diagram/Diagramkonteks.drawio.png)
+![Diagram utsl](../diagram/Diagramkonteks.drawio.png)
