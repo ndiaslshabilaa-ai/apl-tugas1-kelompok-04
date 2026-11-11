@@ -8,27 +8,23 @@ Solusi yang dievaluasi: sistem layanan terpadu berlapis, yaitu lapisan presentas
 
 <img width="772" height="551" alt="Pohon Utilitas" src="https://github.com/user-attachments/assets/329f96ed-becf-4498-8c88-502779f9037c" />
 
-Atribut mutu	Skenario	Penting	Sulit
-Efisiensi	S1: verifikasi judul selesai ≤ 3 hari kerja untuk 95% pengajuan saat puncak (200 pengajuan)	Tinggi	Sedang
-Transparansi	S2: status tahap dan alasan penolakan terlihat dalam ≤ 2 klik; notifikasi ≤ 5 menit	Tinggi	Rendah
-Modifiabilitas	S3: prodi mengubah kuota dosen atau bobot rubrik tanpa ubah kode, selesai ≤ 1 hari	Sedang	Rendah
+Gambar 1. Pohon utilitas mini: tiga atribut mutu (efisiensi, transparansi, modifiabilitas), masing-masing dengan satu skenario terukur beserta prioritasnya (Penting dan Sulit).
+
+S1 (Efisiensi): verifikasi judul selesai ≤ 3 hari kerja untuk 95% pengajuan saat puncak (200 pengajuan).
+S2 (Transparansi): status tahap dan alasan penolakan terlihat dalam ≤ 2 klik; notifikasi ≤ 5 menit.
+S3 (Modifiabilitas): prodi mengubah kuota dosen atau bobot rubrik tanpa ubah kode, selesai ≤ 1 hari.
 
 S1 dan S2 langsung menjawab kekurangan berulang (alur berbelit dan kriteria tidak transparan). S3 menjaga agar aturan kebijakan bisa disesuaikan.
 
-2. Trade-off berbobot: dua alternative
-
+2. Trade-off berbobot: dua alternatif
 Alternatif A: sistem terpadu berlapis dengan aturan otomatis.
 Alternatif B: semi-manual, yaitu perbaikan SOP, formulir daring, dan koordinasi lewat email atau WhatsApp.
 
-Skor 1-5 (5 = terbaik).
+Skor 1-5 (5 = terbaik). Bobot: efisiensi 30, transparansi 25, modifiabilitas 15, biaya dan waktu implementasi 15, kemudahan adopsi 15.
 
-Kriteria	Bobot	A: skor	A: nilai	B: skor	B: nilai
-Efisiensi waktu (S1)	30	5	150	2	60
-Transparansi (S2)	25	5	125	2	50
-Modifiabilitas (S3)	15	4	60	3	45
-Biaya dan waktu implementasi	15	2	30	5	75
-Kemudahan adopsi	15	3	45	4	60
-Total (maks. 500)	100		410 (4,10)		290 (2,90)
+<img alt="Trade-off Berbobot" src="GANTI_DENGAN_URL_GAMBAR_2" />
+
+Gambar 2. Nilai terbobot per kriteria. Total: A = 410 (4,10) dan B = 290 (2,90).
 
 Kesimpulan: Alternatif A unggul. Hasilnya cukup kokoh: B baru menang jika bobot biaya naik sekitar 20 poin dengan mengorbankan bobot efisiensi, artinya prodi harus lebih mementingkan anggaran daripada kecepatan layanan.
 
@@ -56,12 +52,8 @@ Rekomendasi: sediakan override terkontrol dengan alasan yang tercatat.
 
 Teratasi sebagian, dan bagian yang tersisa bukan masalah teknis.
 
-Kekurangan (dari kedua pola)	Penanganan arsitektur	Status
-Kriteria judul tidak transparan, persetujuan berbelit	Validasi judul, dasbor status, alasan penolakan terlihat	Teratasi
-Koordinasi jadwal ruang dan penguji	Modul kuota dan jadwal otomatis	Teratasi
-Subjektivitas penilaian antar-penguji	Rubrik terstandar, nilai per penguji terpantau	Berkurang, belum hilang
-Penentuan pembimbing tidak sesuai harapan	Pencocokan berbasis keahlian dan kuota	Berkurang (Risiko 1)
-Dosen kurang responsif	Pengingat dan eskalasi	Belum tentu (Risiko 2)
-Stres sidang, keterbatasan jumlah pakar	Tidak tercakup sistem	Belum teratasi
+<img alt="Status Masalah Utama" src="GANTI_DENGAN_URL_GAMBAR_3" />
+
+Gambar 3. Status tiap kekurangan: teratasi (hijau), sebagian atau belum tentu (kuning), belum teratasi (koral).
 
 Arsitektur ini efektif menghilangkan hambatan struktural, yaitu ketidakjelasan dan koordinasi manual. Hambatan perilaku dan kapasitas, seperti respons dosen, jumlah pakar, dan tekanan psikologis, hanya bisa dikurangi lewat kebijakan: SLA yang disepakati, beban bimbingan yang adil, dan pendampingan menjelang sidang. Sistem hanya membuat masalah itu terlihat dan terukur.
