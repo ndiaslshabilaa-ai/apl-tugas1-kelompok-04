@@ -37,7 +37,7 @@ Pembagian ini mengikuti rancangan arsitektur pada U5. Aturan akademik ditempatka
 
 ---
 
-## ADR-UTS-002  Penerapan Controlled Override untuk Penanganan Kondisi Khusus Akademik*
+## ADR-UTS-002  Penerapan Controlled Override untuk Penanganan Kondisi Khusus Akademik
 
 ### Title
 **ADR-002:** Penerapan Controlled Override dengan RBAC dan Audit Log untuk Penyesuaian Aturan Akademik.
