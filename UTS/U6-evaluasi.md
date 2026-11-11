@@ -1,11 +1,11 @@
 Evaluasi ATAM Layanan Tugas Akhir
-Masalah utama dan solusi yang dievaluasi
 
 Masalah utama: alur layanan Tugas Akhir lambat dan tidak transparan. Persetujuan berbelit, koordinasi jadwal ruang dan penguji sulit, dosen kurang responsif, dan penilaian antar-penguji subjektif. Masalah ini diturunkan dari kekurangan yang berulang pada Pola 1 dan Pola 2 di lima tahap: pengajuan judul, penetapan pembimbing, bimbingan, seminar dan sidang, serta penilaian.
 
 Solusi yang dievaluasi: sistem layanan terpadu berlapis, yaitu lapisan presentasi (dasbor matriks status), lapisan layanan (satu modul per tahap), lapisan aturan bisnis (validasi judul, kuota dan jadwal, rubrik nilai), dan lapisan data.
 
 1. Pohon utilitas mini (3 skenario)
+
 <img width="772" height="551" alt="Pohon Utilitas" src="https://github.com/user-attachments/assets/329f96ed-becf-4498-8c88-502779f9037c" />
 
 Atribut mutu	Skenario	Penting	Sulit
@@ -15,7 +15,8 @@ Modifiabilitas	S3: prodi mengubah kuota dosen atau bobot rubrik tanpa ubah kode,
 
 S1 dan S2 langsung menjawab kekurangan berulang (alur berbelit dan kriteria tidak transparan). S3 menjaga agar aturan kebijakan bisa disesuaikan.
 
-2. Trade-off berbobot: dua alternatif
+2. Trade-off berbobot: dua alternative
+
 Alternatif A: sistem terpadu berlapis dengan aturan otomatis.
 Alternatif B: semi-manual, yaitu perbaikan SOP, formulir daring, dan koordinasi lewat email atau WhatsApp.
 
