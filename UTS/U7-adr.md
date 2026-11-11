@@ -1,6 +1,6 @@
 # U7. Architecture Decision Records (ADR)
 
-Bab ini mendokumentasikan keputusan arsitektur penting (*Architecture Decision Records* / ADR) yang diambil selama perancangan subsistem *Assignment & Assessment* (Layanan Tugas Akhir UMI). Setiap keputusan merangkum konteks masalah, pilihan solusi, keputusan final, serta konsekuensi yang ditimbulkannya.
+Dokumen Architectural Decision Record (ADR) ini mencatat keputusan-keputusan arsitektur penting yang ditetapkan dalam perancangan Layanan Tugas Akhir pada *subsistem Assignment & Assessment* Universitas Muslim Indonesia (UMI). Setiap ADR memuat konteks permasalahan, keputusan yang dipilih, serta konsekuensi teknis yang ditimbulkan berdasarkan kebutuhan dan hasil evaluasi arsitektur.
 
 ---
 
