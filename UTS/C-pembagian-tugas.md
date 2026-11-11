@@ -4,6 +4,6 @@
 | :-: | :-: | :--- | :-: | :--- | :-: |
 | 1 | 13020240260 | B.Nadia Salsabila | U1, U7 | Menyusun Konteks & Masalah Utama (U1) dan ADR Baru (U7). | Selesai |
 | 2 | 13020240049 | Artika Milad Arhidayah | U2, U3 | Menyusun Skenario Atribut Kualitas (U2) dan Taktik Arsitektur (U3). | Selesai |
-| 3 | 13020240279 | Andi Naqia Aura WR | U4 | Menyusun Pola Arsitektur (U4). | Belum |
-| 4 | 13020240332 | Annisa Rezky Ashriani | U5, U6 | Menyusun Diagram Arsitektur & Prinsip (U5) dan Evaluasi ATAM (U6). | Belum |
+| 3 | 13020240279 | Andi Naqia Aura WR | U4 | Menyusun Pola Arsitektur (U4). | Selesai |
+| 4 | 13020240332 | Annisa Rezky Ashriani | U5, U6 | Menyusun Diagram Arsitektur & Prinsip (U5) dan Evaluasi ATAM (U6). | Selesai |
 ```
